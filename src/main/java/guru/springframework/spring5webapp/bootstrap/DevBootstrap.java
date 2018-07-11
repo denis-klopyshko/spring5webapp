@@ -32,9 +32,8 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
     }
 
     private void initData(){
-
         //Eric
-        Publisher publisher = new Publisher("\"Harper Collins\"");
+        Publisher publisher = new Publisher("Harper Collins");
         publisherRepository.save(publisher);
 
         Author eric = new Author("Eric", "Evans");
@@ -45,7 +44,6 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
 
         authorRepository.save(eric);
         bookRepository.save(ddd);
-
 
         //Rod
         Author rod = new Author("Rod", "Johnson");
